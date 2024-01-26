@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Report</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Weather Now</h1>
+
+    <div id="map"></div>
+
+    <div id="weather-info" class="weather-info">
+    </div>
+
+    <div class="currency-converter">
+        <button id="getCurrency">Get Currency Rates</button>
+        <div id="currencyRates" class="rates-display"></div>
+    </div>
+    
+    <div class="nasa-images">
+      <button id="getNasaImages" style="margin-bottom: 10px;">Get NASA Images</button>
+      <div id="nasaImageContainer"></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="http://localhost:3000/app.js"></script>
+</body>
+</html>
